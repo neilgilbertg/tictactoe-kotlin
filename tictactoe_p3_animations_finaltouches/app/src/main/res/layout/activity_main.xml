@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:id="@+id/tictactoeGrid"
+        android:layout_width="675dp"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/border">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border">
+
+                    <ImageButton
+                        android:id="@+id/c1x1"
+                        android:layout_width="225sp"
+                        android:layout_height="135sp"
+                        android:background="#00FFFFFF"
+                        android:scaleType="fitCenter" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border">
+
+                    <ImageButton
+                        android:id="@+id/c1x2"
+                        android:layout_width="225sp"
+                        android:layout_height="135sp"
+                        android:background="#00FFFFFF"
+                        android:scaleType="fitCenter" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border">
+
+                    <ImageButton
+                        android:id="@+id/c1x3"
+                        android:layout_width="225sp"
+                        android:layout_height="135sp"
+                        android:background="#00FFFFFF"
+                        android:scaleType="fitCenter" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border">
+
+                    <ImageButton
+                        android:id="@+id/c2x1"
+                        android:layout_width="225sp"
+                        android:layout_height="135sp"
+                        android:background="#00FFFFFF"
+                        android:scaleType="fitCenter" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border">
+
+                    <ImageButton
+                        android:id="@+id/c2x2"
+                        android:layout_width="225sp"
+                        android:layout_height="135sp"
+                        android:background="#00FFFFFF"
+                        android:scaleType="fitCenter" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border">
+
+                    <ImageButton
+                        android:id="@+id/c2x3"
+                        android:layout_width="225sp"
+                        android:layout_height="135sp"
+                        android:background="#00FFFFFF"
+                        android:scaleType="fitCenter" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border">
+
+                    <ImageButton
+                        android:id="@+id/c3x1"
+                        android:layout_width="225sp"
+                        android:layout_height="135sp"
+                        android:background="#00FFFFFF"
+                        android:scaleType="fitCenter" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border">
+
+                    <ImageButton
+                        android:id="@+id/c3x2"
+                        android:layout_width="225sp"
+                        android:layout_height="135sp"
+                        android:background="#00FFFFFF"
+                        android:scaleType="fitCenter" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border">
+
+                    <ImageButton
+                        android:id="@+id/c3x3"
+                        android:layout_width="225sp"
+                        android:layout_height="135sp"
+                        android:background="#00FFFFFF"
+                        android:scaleType="fitCenter" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/statusBar"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tictactoeGrid"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/status_bgCircle"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:tint="@color/white"
+            android:background="#E60A0A0A" />
+
+        <ImageView
+            android:id="@+id/status_bgCross"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:tint="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/statusBar_bgHighlight"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tictactoeGrid"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/status_cross"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/im_circle"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/status_circle"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/im_cross"
+            app:tint="@color/white" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
